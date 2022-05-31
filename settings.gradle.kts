@@ -13,6 +13,9 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Sample Project"
-include ':presentation'
-include ':data'
-include ':domain'
+include(
+    ":presentation",
+    ":data",
+    ":domain"
+)
+
