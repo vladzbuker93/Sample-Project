@@ -1,6 +1,6 @@
 package com.vladzbuker.sampleproject.di.module
 
-import com.vladzbuker.sampleproject.ui.activity.TestActivity
+import com.vladzbuker.sampleproject.ui.activity.MainActivity
 import com.vladzbuker.sampleproject.di.ActivityScope
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -10,5 +10,5 @@ abstract class AndroidFrameworkInjectors {
 
     @ActivityScope
     @ContributesAndroidInjector
-    abstract fun bindTestActivity(): TestActivity
+    abstract fun bindTestActivity(): MainActivity
 }

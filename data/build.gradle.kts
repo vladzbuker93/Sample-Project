@@ -12,6 +12,17 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+
+        buildConfigField(
+            "String",
+            "API_BASE_URL",
+            "\"https://api.stormglass.io/v2/\""
+        )
+        buildConfigField(
+            "String",
+            "API_KEY",
+            "\"9723f200-e191-11ec-bcd6-0242ac130002-9723f26e-e191-11ec-bcd6-0242ac130002\""
+        )
     }
 
     buildTypes {

@@ -1,15 +1,14 @@
 package com.vladzbuker.domain.usecase
 
-import com.vladzbuker.domain.repository.TestRepo
+import com.vladzbuker.domain.repository.WeatherRepository
 import javax.inject.Inject
 
 class TestCase
 @Inject constructor(
-    private val testRepo: TestRepo
+    private val weatherRepository: WeatherRepository
 ) {
 
-    fun getTestValue(): String {
-        return testRepo.getSomeData()
+    suspend fun testApi() {
+        weatherRepository.testApi()
     }
-
 }

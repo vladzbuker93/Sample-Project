@@ -10,16 +10,18 @@ import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import dagger.android.support.DaggerApplication
+import com.vladzbuker.sampleproject.di.module.ServiceModule
 import javax.inject.Singleton
 
 @Singleton
 @Component(
-        modules = [
-            AndroidSupportInjectionModule::class,
-            AndroidFrameworkInjectors::class,
-            RepositoryModule::class,
-            AppModule::class
-        ]
+    modules = [
+        AndroidSupportInjectionModule::class,
+        AndroidFrameworkInjectors::class,
+        RepositoryModule::class,
+        AppModule::class,
+        ServiceModule::class
+    ]
 )
 interface CoreComponent : AndroidInjector<DaggerApplication> {
 

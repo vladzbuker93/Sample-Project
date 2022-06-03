@@ -37,6 +37,7 @@ android {
 }
 
 dependencies {
+
     implementation(project(":domain"))
     implementation(project(":data"))
 
@@ -44,12 +45,16 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.4.1")
     implementation("com.google.android.material:material:1.6.0")
 
-    implementation("com.google.dagger:dagger-android:2.40.5")
-    implementation("com.google.dagger:dagger-android-support:2.40.5")
+    implementation("com.google.dagger:dagger-android:2.42")
+    implementation("com.google.dagger:dagger-android-support:2.42")
 
-    kapt("com.google.dagger:dagger-compiler:2.40.5")
-    kapt("com.google.dagger:dagger-android-processor:2.40.5")
-    kapt("com.google.dagger:dagger-android-support:2.40.5")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+
+    kapt("com.google.dagger:dagger-compiler:2.42")
+    kapt("com.google.dagger:dagger-android-processor:2.42")
+    kapt("com.google.dagger:dagger-android-support:2.42")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
