@@ -15,5 +15,7 @@ class MainActivity : DaggerActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_test)
+
+        viewModel.testApi()
     }
 }

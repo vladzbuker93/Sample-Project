@@ -10,7 +10,7 @@ import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import dagger.android.support.DaggerApplication
-import di.ServiceModule
+import com.vladzbuker.sampleproject.di.module.ServiceModule
 import javax.inject.Singleton
 
 @Singleton
